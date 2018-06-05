@@ -86,13 +86,66 @@ def main():
 main()
 
 #9
+#F=9/5*C+32
+def main():
+   C=int(input('Please enter the temperature in C: ')) 
+   F=9/5*C+32
+   print("The temperature in F: ", F)
+main()
 
 #10
+def main():
+    sugar=1.5
+    butter=1
+    flour=2.75
+    number=48
+    n=int(input("Please enter the amount of cookies you want: "))
+    one_sugar=sugar/number
+    one_butter=butter/number
+    one_flour=flour/number
+    new_sugar=n*one_sugar
+    new_butter=n*one_butter
+    new_flour=n*one_flour
+    print('You need ', new_sugar, " cups of sugar,  ", new_butter, " cups of butter, and ", new_flour, " cups of flour.")
+main()
 
 #11
-
+def main():
+    female=int(input("Enter the number of female: "))
+    male=int(input("Enter the number of male: "))
+    total_students=female+male
+    print("The percentage of males: ", male/total_students)
+    print("The percentage of females: ", female/total_students)    
+main()
 #12
-
+def main():
+    number_stocks=2000
+    per_share_price=40
+    com=0.03
+    total_com_purchased=com*per_share_price*number_stocks
+    total_purchased_cost=number_stocks*per_share_price
+    total_p_after_com=total_purchased_cost+total_com_purchased
+    
+    
+    sold=2000
+    per_share_sold=42.75
+    com=0.03
+    total_com_s=com*per_share_sold*sold
+    total_purchased_sold=number_stocks*per_share_sold
+    total_s_after_com=total_purchased_sold-total_com_s
+    
+    print('The amount of money Joe paid for the stock-one stock: ',  per_share_price)
+    print('The amount of commission Joe paid his broker when he bought the stock: ',total_com_purchased)
+    print('The amount that Joe sold the stock for: ', per_share_sold)
+    print('The amount of commission Joe paid his broker when he sold the stock: ',total_com_s)
+    print('The amount of money that Joe had left when he sold the stock and paid his broker: ',total_s_after_com)
+    
+    if total_s_after_com>total_p_after_com:
+        print("Joe made profit: " )
+    else:
+        print("Joe made loss: ")
+    
+main()
 
 
 
