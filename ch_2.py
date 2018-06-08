@@ -8,6 +8,7 @@ main()
 
 #2
 
+print('--'*10)
 def main():
     total_sales= input("Please, enter the total sales: ")
     annual_profit=0.23*int(total_sales)
@@ -16,14 +17,16 @@ main()
 
 #3
 
+print('--'*10)
 def main():
     one_acre_land=43560
-    square_feet=input("Enter the total square fee in a tract of land: ")
+    square_feet=input("Enter the total square feet in a tract of land: ")
     print("The number of acres in the tract: ", format(int(square_feet)/one_acre_land, '.2f'))
 main()
 
 #4
- 
+
+print('--'*10) 
 def main():
     #items=5
     price_1=int(input("Price 1st item: "))
@@ -41,6 +44,7 @@ main()
 
 #5
 
+print('--'*10)
 def main():
     speed=70
     #distance=speed*time
@@ -51,6 +55,7 @@ main()
 
 #6
 
+print('--'*10)
 def main():
     amount_purchase=int(input('Enter the amount of a purchase: '))
     state_sales_tax=0.05
@@ -64,6 +69,7 @@ main()
 
 #7
 
+print('--'*10)
 def main():
     number_miles=int(input('Enter miles driven: '))
     gallon=int(input('Enter gallons: '))
@@ -73,6 +79,7 @@ main()
 
 #8
 
+print('--'*10)
 def main():
    tax=0.07
    tip=0.18
@@ -87,6 +94,7 @@ main()
 
 #9
 #F=9/5*C+32
+print('--'*10)
 def main():
    C=int(input('Please enter the temperature in C: ')) 
    F=9/5*C+32
@@ -94,6 +102,8 @@ def main():
 main()
 
 #10
+
+print('--'*10)
 def main():
     sugar=1.5
     butter=1
@@ -106,45 +116,49 @@ def main():
     new_sugar=n*one_sugar
     new_butter=n*one_butter
     new_flour=n*one_flour
-    print('You need ', new_sugar, " cups of sugar,  ", new_butter, " cups of butter, and ", new_flour, " cups of flour.")
+    print('You need ', format(new_sugar, '.2f'), " cups of sugar,  ", format(new_butter,'.2f'), " cups of butter, and ", format( new_flour,'.2f'), " cups of flour.")
 main()
 
 #11
+
+print('--'*10)
 def main():
     female=int(input("Enter the number of female: "))
     male=int(input("Enter the number of male: "))
     total_students=female+male
-    print("The percentage of males: ", male/total_students)
-    print("The percentage of females: ", female/total_students)    
+    print("The percentage of males: ", format((male/total_students)*100,'.3f'))
+    print("The percentage of females: ", format((female/total_students)*100, '.3f'))    
 main()
+
 #12
+
+print('--'*10)
 def main():
     number_stocks=2000
     per_share_price=40
-    com=0.03
-    total_com_purchased=com*per_share_price*number_stocks
+    commission=0.03
+    total_commission_purchased=commission*per_share_price*number_stocks
     total_purchased_cost=number_stocks*per_share_price
-    total_p_after_com=total_purchased_cost+total_com_purchased
+    total_purchased_after_commission=total_purchased_cost+total_commission_purchased
     
     
     sold=2000
     per_share_sold=42.75
-    com=0.03
-    total_com_s=com*per_share_sold*sold
+    commission=0.03
+    total_commission_sold=commission*per_share_sold*sold
     total_purchased_sold=number_stocks*per_share_sold
-    total_s_after_com=total_purchased_sold-total_com_s
+    total_sold_after_commission=total_purchased_sold-total_commission_sold
     
     print('The amount of money Joe paid for the stock-one stock: ',  per_share_price)
-    print('The amount of commission Joe paid his broker when he bought the stock: ',total_com_purchased)
+    print('The amount of commission Joe paid his broker when he bought the stock: ',total_commission_purchased)
     print('The amount that Joe sold the stock for: ', per_share_sold)
-    print('The amount of commission Joe paid his broker when he sold the stock: ',total_com_s)
-    print('The amount of money that Joe had left when he sold the stock and paid his broker: ',total_s_after_com)
+    print('The amount of commission Joe paid his broker when he sold the stock: ',total_commission_sold)
+    print('The amount of money that Joe had left when he sold the stock and paid his broker: ',total_sold_after_commission)
     
-    if total_s_after_com>total_p_after_com:
-        print("Joe made profit: " )
+    if total_sold_after_commission>total_purchased_after_commission:
+        print("Joe made profit. " )
     else:
-        print("Joe made loss: ")
-    
+        print("Joe made loss. ")    
 main()
 
 
