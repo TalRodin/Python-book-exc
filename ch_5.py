@@ -1,4 +1,5 @@
 #chapter 5
+
 import random
 #1
 
@@ -79,7 +80,9 @@ def calc(A,B,C):
 main()
 
 #8
+
 print('--'*10)
+
 
 
 #9
@@ -275,13 +278,76 @@ main()
 #19
 
 print('--'*10)
-
+def main():
+    present_value=int(input("Please enter the present value: "))
+    monthly_interest_rate=int(input("Please enter the monthly interest rate:"))
+    number_month=int(input("Number of months: "))
+    amount(present_value,monthly_interest_rate,number_month)
+    
+def amount(present_value,monthly_interest_rate,number_month):
+    F=present_value*(1+monthly_interest_rate/100)**number_month
+    print(format(F, '.2f'))
+main()
 
 #20
 
 print('--'*10)
-
+def main():
+    number=random.randint(1,100)
+    guess=int(input())
+    if number>guess:
+        print("Too high, try again.")
+    elif number<guess:
+        print("Too low, try again.")
+    else:
+        print("Correct.")
+main()
 
 #21
 
 print('--'*10)
+def main():
+   number=random.randint(1,3) 
+   choice=''
+   if number==1:
+       choice='rock'
+   elif number==2:
+       choice='paper'
+   else:
+       choice='scissors'
+       
+   user_choice=input()
+   print(choice)
+   if user_choice=='rock' and  choice=='scissors':
+       print("User won")
+   elif user_choice=='scissors' and  choice=='rock':
+       print("Computer won")
+   elif user_choice=='scissors' and  choice=='paper':
+       print("User won")
+   elif user_choice=='paper' and  choice=='scissors':
+       print("Computer won")
+   elif user_choice=='paper' and  choice=='rock':
+       print("User won")
+   elif user_choice=='rock' and  choice=='paper':
+       print("Computer won")
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

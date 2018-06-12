@@ -65,7 +65,31 @@ main()
 
 #5
 
+print('--'*10)
+def main():    
+    outfile=open('code.txt', 'w')  
+    for i in range(5):
+        c=int(input("Please enter the code: "))
+        outfile_content=outfile.write(c)
+        print(outfile_content)
+    outfile.close()
+    open_file(outfile)
 
+def open_file(outfile):
+    codes=[]
+    infile=open(outfile, 'r')
+    for i in range(5):
+        infile_content=infile.readline()
+        codes.append(infile_content)
+    user(codes)    
+def user(codes):
+    c=input("Please enter the code: ")
+    for value in codes:
+        if value == c:
+            print("Valid")
+        else:
+            print("Not valid")
+main()
 
 #6
 
@@ -85,3 +109,5 @@ print('--'*10)
 print('--'*10)
 #11
 print('--'*10)
+
+
