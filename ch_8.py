@@ -50,10 +50,10 @@ def main():
     elif date[0]=='12':
         m='December'
     else:
-        print("Error")
-        
+        print("Error")       
     print (m,' ', date[1], ', ', date[3] )
 main()
+
 #4
 
 

@@ -1,6 +1,7 @@
 #chapter 5
 
 import random
+
 #1
 
 print('--'*10)
@@ -330,6 +331,8 @@ def main():
        print("User won")
    elif user_choice=='rock' and  choice=='paper':
        print("Computer won")
+   else:
+       'Error'
 main()
 
 
