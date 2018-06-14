@@ -51,8 +51,19 @@ def main():
 main()
 
 #5
-print('--'*10)
 
+print('--'*10)
+def main():
+    assesment=0.60
+    property_tax=0.72/100
+    value=int(input())
+    assesment_value_property_tax(property_tax,assesment, value)
+def assesment_value_property_tax(property_tax,assesment, value):
+    assesment_value=value*assesment
+    print(format(assesment_value, '.2f'))
+    property_value=value*property_tax
+    print(format(property_value, '.2f')) 
+main()
 
 #6
 
@@ -83,7 +94,20 @@ main()
 #8
 
 print('--'*10)
-
+def main():
+    square_feet_wall=int(input())
+    price_paint_per_gallon=int(input())
+    number_gallons=square_feet_wall/112
+    hours_labor=(8*square_feet_wall)/112
+    cost_paint=35*hours_labor
+    total_cost=cost_paint+number_gallons*price_paint_per_gallon
+    print("Square feet wall: ", format(square_feet_wall, '.2f'))
+    print("Price per gallon: ", format(price_paint_per_gallon, '.2f'))
+    print("Number gallons: ", format(number_gallons, '.2f'))
+    print("Hours of labor: ", format(hours_labor, '.2f'))
+    print("Cost paint: ", format(cost_paint, '.2f'))
+    print("Total cost: ", format(total_cost, '.2f'))   
+main()
 
 
 #9

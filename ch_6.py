@@ -122,7 +122,50 @@ main()
 
 print('--'*10)
 
+def main():
+    try:
+        infile=open("numbers.txt", 'r')
+        infile_content=infile.read().split(' ')
+        print (infile_content)
+        total=0
+        count=0
+        for i in infile_content:
+            total+=int(i)
+            count+=1
+        print(total)
+        print(count)
+        average(total, count) 
+        infile.close()
+    except IOError:
+        print("An error occured trying to read the file.")
+    except ValueError:
+        print('Non-numeric data found in the file.')
+    except:
+        print("An error occured.")
+def average(total, count):
+        average=total/count
+        print(average)
+main()
 
 #10
 
 print('--'*10)
+def main():    
+    try:
+        outfile=open('golf.txt','w')
+        for i in range(5): 
+            name, score=input().split(' ') 
+            outfile.write(name+' '+score+'\n')
+            #print(name, score)
+        outfile.close()
+    except ValueError:
+        print('Error')
+    read_file(outfile)   
+def read_file(outfile):
+   
+    infile=open('golf.txt', 'r')
+    infile_content=infile.read()
+    print(infile_content)
+    infile.close()
+     
+main()
