@@ -2,7 +2,6 @@
 
 #1
 
-print('--'*10)
 def main():
   sales=[]
   for i in range(7):
@@ -17,7 +16,6 @@ main()
 
 #2
 
-print('--'*10)
 import random
 def main():
    random_list=[]
@@ -30,7 +28,6 @@ main()
 
 #3
 
-print('--'*10)
 def main():
    rain=[]
    for r in range(12):
@@ -47,7 +44,6 @@ main()
 
 #4
 
-print('--'*10)
 def main():
    numbers=[]
    for n in range(20):
@@ -65,10 +61,38 @@ main()
 
 #5
 
+def main():
+    outfile=open ('charge_accounts.txt', 'w')    
+    for i in range (5):
+        accounts=int(input("Enter charge account: "))
+        outfile.write(str(accounts)+'\n')        
+    outfile.close()
+    print(outfile)    
+main()
+    
+def account_validation():
+    list_=[]
+    file=open('charge_accounts.txt','r') 
+    file_content=file.read().split('\n')
+    print(file_content)
+    for i in file_content:
+        print(i)
+        list_.append(i)
+    print(list_)
+    file.close()  
+    #print(file_content)
+    list_.remove('')
+    print(list_)
+    user_account=input("Enter your account to validate: ")
+    for i in range(len(list_)):
+        if list_[i] ==user_account:
+            print("Valid")
+        else:
+            False            
+account_validation()
 
 #6
 
-print('--'*10)
 def main():
     list_=[1,2,3,4,5,6,7,8]
     n=int(input())
@@ -79,16 +103,12 @@ main()
 
 #7
 
-print('--'*10)
-
 def main():
     correct_answer=['A','C','A','A','D','B','C','A','C','B','A','D','C','A','D','A','B','B','D','A']
-    student=[]
-    
+    student=[]    
     for i in range(20):        
         student_answer=input()
-        student.append(student_answer)
-        
+        student.append(student_answer)        
     print(correct_answer) 
     print(student)
     if student==correct_answer:
@@ -107,14 +127,12 @@ def main():
 main()
 
 #8
-print('--'*10)
-
 
 #9
-print('--'*10)
+
 #10
-print('--'*10)
+
 #11
-print('--'*10)
+
 
 

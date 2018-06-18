@@ -4,7 +4,6 @@ import random
 
 #1
 
-print('--'*10)
 def main():
    kilometers=int(input("Please enter the distance in kilometers: "))
    miles=kilometers*0.6214
@@ -13,7 +12,6 @@ main()
 
 #2
 
-print('--'*10)
 def main():
     amount_purchase=int(input('Enter the amount of a purchase: '))
     state_sales_tax=0.05
@@ -27,7 +25,7 @@ main()
 
 #3
 
-print('--'*10)
+
 def main():
    cost_replace_structure=int(input("Please enter the replacement cost: "))
    ins=0.80
@@ -36,7 +34,7 @@ main()
 
 #4
 
-print('--'*10)
+
 def main():
     #monthly
    loan_payment=int(input("Loan: "))
@@ -52,7 +50,7 @@ main()
 
 #5
 
-print('--'*10)
+
 def main():
     assesment=0.60
     property_tax=0.72/100
@@ -67,7 +65,7 @@ main()
 
 #6
 
-print('--'*10)
+
 def main():
    fat=int(input("Please enter amount of fat: "))
    carb=int(input("Please enter amount of carb: "))
@@ -93,7 +91,7 @@ main()
 
 #8
 
-print('--'*10)
+
 def main():
     square_feet_wall=int(input())
     price_paint_per_gallon=int(input())
@@ -112,7 +110,7 @@ main()
 
 #9
 
-print('--'*10)
+
 def main():
     total_sales=int(input("Please enter the total sales: "))
     c=county_tax(total_sales)
@@ -132,7 +130,7 @@ main()
 
 #10
 
-print('--'*10)
+
 def main():
     #1foot=12inches
     number=int(input("Please enter the number of feet: "))
@@ -143,7 +141,7 @@ main()
 
 #11
 
-print('--'*10)
+
 def main():
     choice=int(input("Please enter the level of the game (1,2,3): "))
     if choice ==1:
@@ -188,7 +186,7 @@ main()
 
 #12
 
-print('--'*10)
+
 def main():
     int_1=int(input("Please enter the first integer: "))
     int_2=int(input("Please enter the second integer: "))
@@ -202,7 +200,7 @@ main()
 
 #13
 
-print('--'*10)
+
 g=9.8
 def main():
     time=int(input("Please enter the time in seconds: "))
@@ -216,7 +214,7 @@ main()
 
 #14
 
-print('--'*10) 
+
 def main():   
     m=int(input("Please enter the mass: "))
     v=int(input("Please enter the velocity: "))
@@ -228,7 +226,7 @@ main()
 
 #15
 
-print('--'*10)
+
 def main():
     list_=[]
     for i in range(5):
@@ -258,7 +256,7 @@ main()
 
 #16
 
-print('--'*10)
+
 def main():
     odd_total=0
     even_total=0
@@ -274,7 +272,7 @@ main()
 
 #17
 
-print('--'*10)
+
 def main():
     number=int(input("Please enter the number: "))
     print(prime(number))
@@ -287,7 +285,7 @@ main()
 
 #18
 
-print('--'*10)
+
 def main():
     number=int(input("Please enter the number: "))
     for i in range (number):
@@ -302,7 +300,6 @@ main()
 
 #19
 
-print('--'*10)
 def main():
     present_value=int(input("Please enter the present value: "))
     monthly_interest_rate=int(input("Please enter the monthly interest rate:"))
@@ -316,7 +313,6 @@ main()
 
 #20
 
-print('--'*10)
 def main():
     number=random.randint(1,100)
     guess=int(input())

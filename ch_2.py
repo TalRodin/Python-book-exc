@@ -8,7 +8,6 @@ main()
 
 #2
 
-print('--'*10)
 def main():
     total_sales= input("Please, enter the total sales: ")
     annual_profit=0.23*int(total_sales)
@@ -17,7 +16,6 @@ main()
 
 #3
 
-print('--'*10)
 def main():
     one_acre_land=43560
     square_feet=input("Enter the total square feet in a tract of land: ")
@@ -26,7 +24,6 @@ main()
 
 #4
 
-print('--'*10) 
 def main():
     #items=5
     price_1=int(input("Price 1st item: "))
@@ -55,7 +52,6 @@ main()
 
 #6
 
-print('--'*10)
 def main():
     amount_purchase=int(input('Enter the amount of a purchase: '))
     state_sales_tax=0.05
@@ -69,7 +65,6 @@ main()
 
 #7
 
-print('--'*10)
 def main():
     number_miles=int(input('Enter miles driven: '))
     gallon=int(input('Enter gallons: '))
@@ -94,7 +89,7 @@ main()
 
 #9
 #F=9/5*C+32
-print('--'*10)
+
 def main():
    C=int(input('Please enter the temperature in C: ')) 
    F=9/5*C+32
@@ -103,7 +98,6 @@ main()
 
 #10
 
-print('--'*10)
 def main():
     sugar=1.5
     butter=1
@@ -121,7 +115,6 @@ main()
 
 #11
 
-print('--'*10)
 def main():
     female=int(input("Enter the number of female: "))
     male=int(input("Enter the number of male: "))
@@ -132,7 +125,6 @@ main()
 
 #12
 
-print('--'*10)
 def main():
     number_stocks=2000
     per_share_price=40

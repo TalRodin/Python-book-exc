@@ -2,7 +2,6 @@
 
 #1
 
-print('--'*10)
 def main():
   file=open('numbers.txt','r') 
   file_content=file.read()
@@ -12,7 +11,6 @@ main()
 
 #2
 
-print('--'*10)
 def main():
    file=input("Please enter the name of the file: ")
    infile=open(file, 'r',encoding="utf-8")
@@ -27,7 +25,6 @@ main()
 
 #3
 
-print('--'*10)
 def main():
    file=input("Please enter the name of the file: ")
    infile=open(file, 'r',encoding="utf-8")
@@ -40,7 +37,6 @@ main()
 
 #4
 
-print('--'*10)
 def main():
     infile=open('names.txt', 'r', encoding="utf-8")
     count=0
@@ -52,7 +48,6 @@ main()
 
 #5
 
-print('--'*10)
 def main():
    infile=open("numbers.txt", 'r')
    infile_content=infile.read().split(' ')
@@ -66,7 +61,6 @@ main()
 
 #6
 
-print('--'*10)
 def main():
    infile=open("numbers.txt", 'r')
    infile_content=infile.read().split(' ')
@@ -88,7 +82,6 @@ main()
 
 #7
 
-print('--'*10)
 import random
 def main():
    outfile=open('number.txt','w')
@@ -101,7 +94,6 @@ main()
 
 #8
 
-print('--'*10)
 def main():
    infile=open('number.txt', 'r')
    infile_content=infile.readline()  
@@ -109,7 +101,6 @@ def main():
    count=0   
    while infile_content!='':
        f=float(infile_content)
-
        total+=int(f)
        count+=1
        infile_content=infile.readline()
@@ -119,8 +110,6 @@ def main():
 main()
 
 #9
-
-print('--'*10)
 
 def main():
     try:
@@ -149,7 +138,6 @@ main()
 
 #10
 
-print('--'*10)
 def main():    
     try:
         outfile=open('golf.txt','w')
@@ -161,8 +149,7 @@ def main():
     except ValueError:
         print('Error')
     read_file(outfile)   
-def read_file(outfile):
-   
+def read_file(outfile):   
     infile=open('golf.txt', 'r')
     infile_content=infile.read()
     print(infile_content)

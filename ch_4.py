@@ -2,7 +2,6 @@
 
 #1
 
-print('--'*10)
 def main():
     number_days=5
     total_bugs=0
@@ -14,7 +13,6 @@ main()
 
 #2
 
-print('--'*10)
 def main():
     burn_cal=4.2
     for i in range (10,30+5, 5):
@@ -23,7 +21,6 @@ main()
 
 #3
 
-print('--'*10)
 def main():
     total_exp=0
     num_days_month=int(input('Enter number days a month: '))
@@ -35,7 +32,6 @@ main()
 
 #4
 
-print('--'*10)
 #distance=speed*time
 def main():
     speed=int(input("Enter the speed: "))
@@ -49,7 +45,6 @@ main()
 
 #5
 
-print('--'*10)
 def main():
     n_years=int(input("Please enter the number of years: "))
     month=12
@@ -65,7 +60,6 @@ main()
 
 #6
 
-print('--'*10)
 def main():
    #F=9/5*C+32
    for C in range(0,20,1):
@@ -75,7 +69,6 @@ main()
 
 #7
 
-print('--'*10)
 def main():
    number_days=int(input("Please enter the number of days: "))
    print('Day: ', ' '*10, 'Salary: ')
@@ -90,7 +83,6 @@ main()
 
 #8
 
-print('--'*10)
 def main():
   number= int(input("Please enter the number: "))
   total=0
@@ -117,7 +109,6 @@ main()
 
 #10
 
-print('--'*10)
 def main():
     tuition=8000
     percent=0.03
@@ -131,7 +122,6 @@ main()
 
 #11
 
-print('--'*10)
 def main():
     number=int(input("Please enter the number: "))
     f=1
@@ -142,7 +132,6 @@ main()
 
 #12
 
-print('--'*10)
 def main():
    starting_number=int(input("Please enter the starting number of organisms: "))
    average_increase=int(input("Please enter the average increase (%): "))
@@ -169,7 +158,6 @@ main()
 
 #14
 
-print('--'*10)
 def main():
      base_size=6
      for row in range(base_size):

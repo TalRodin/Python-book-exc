@@ -2,7 +2,6 @@
 
 #1
 
-print('--'*10)
 def main():
     number = int(input("Enter the number from 1 to 7: "))
     if number == 1:
@@ -25,7 +24,6 @@ main()
 
 #2
 
-print('--'*10)
 def main():
     length_1=int(input("Enter the length of first rectangle: "))
     width_1=int(input("Enter the width of first rectangle: "))
@@ -46,7 +44,6 @@ main()
 
 #3
 
-print('--'*10)
 def main():
     age=int(input('Enter your age: '))
     if age<=1:
@@ -63,7 +60,6 @@ main()
 
 #4
 
-print('--'*10)
 def main():
     number=int(input('Enter the number: '))
     if number==1:
@@ -92,7 +88,6 @@ main()
 
 #5
 
-print('--'*10)
 def main():
    mass=int(input("Enter the amount of mass of an object in kilograms: "))
    weight=mass*9.8
@@ -105,7 +100,7 @@ main()
 
 #6
 
-print('--'*10)
+
 def main():
    month=int(input("Please enter the month: "))
    day=int(input("Please enter the day: "))
@@ -119,7 +114,6 @@ main()
 
 #7
 
-print('--'*10)
 def main():
     first_color=input("Please enter the first color: ")
     second_color=input("Please enter the second color: ")
@@ -137,7 +131,6 @@ main()
 
 #8
 
-print('--'*10)
 import numpy as np
 def main():
     number_people=int(input("Enter number of people: "))
@@ -160,7 +153,6 @@ main()
 
 #9
 
-print('--'*10)
 def main():
    number=int(input("Please enter the pocket number: "))
    if number==0:
@@ -191,7 +183,6 @@ main()
 
 #10
 
-print('--'*10)
 def main():
    #pennies 1
    #nickels 5
@@ -240,7 +231,6 @@ main()
 
 #12
 
-print('--'*10)
 def main():
     price=99
     number_packages=int(input("Please enter the number of packages: "))
@@ -276,7 +266,6 @@ main()
 
 #14
 
-print('--'*10)
 #BMI=weight*(703/height^2)
 def main():
     weight=int(input("Please enter the weight: "))
