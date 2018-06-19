@@ -1,4 +1,4 @@
- #chapter 7
+#chapter 7
 
 #1
 
@@ -128,7 +128,23 @@ main()
 
 #8
 
+def main():
+    infile_girls=open("GirlNames.txt", 'r') 
+    infile_boys=open("BoyNames.txt", 'r')
+    girl_file_content=infile_girls.read()
+    boy_file_content=infile_boys.read()
+    print(girl_file_content)
+    print(boy_file_content)
+    name=input()
+    if name in girl_file_content or name in boy_file_content:        
+        print("Popular")
+    else:
+        print("Not popular")
+main()
+
 #9
+
+
 
 #10
 
