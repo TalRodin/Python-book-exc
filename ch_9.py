@@ -21,17 +21,29 @@ main()
 
 #2
 
+import random
 def main():
-   country_capital={}
-   country_capital['Russia']='Moscow'
-   country_capital['USA']='WashingtonDC'
-   country_capital['France']='Paris'
-   country_capital['UK']='London'
-   
-main()
-
+    keep_going='y'
+    while keep_going=='y':
+        dic_countries={'Russia':'Moscow','France':'Paris','Great Britain':'London','Israel':'Jerusalem'}
+        country = random.choice(list(dic_countries.keys()))
+        print(country)
+        capital=input()
+        if capital==dic_countries[country]:
+            print("Correct")
+        else:
+            print("Incorrect")
+        
+        keep_going=input("Please enter 'y' to continue: ")    
+        
+        
+main()  
 
 #3
+
+
+
+
 
 #4
 

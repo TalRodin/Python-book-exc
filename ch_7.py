@@ -144,11 +144,122 @@ main()
 
 #9
 
+def main():
+    infile=open('USPopulation.txt', 'r')
+    list_=[]
+    list_change=[]
+    
+    infile_content=infile.readline()
+    while infile_content!='':
+        list_.append(infile_content.split())
+        infile_content=infile.readline()
+        
+    print(list_)   
+    del list_[0]
+    i=1
+    for i in range(len(list_)):
+        change=int(list_[i][1])-int(list_[i-1][1])
+        list_change.append(change)
+    print(list_change)
+    del list_change[0]
+    list_change.insert(0,0)
+    print(list_change)
+    total=0
+    
+    for value in list_change:
+        total+=int(value)
+    
+    print("The average change: ",format(total/len(list_change), '.2f'))
+    
+    maxC=0
+    minC=0
+    change=1
+    for change in range(len(list_change)):
+        if list_change[change]>list_change[change-1]:
+            minC=maxC
+            maxC=list_change[change]
+            year=list_[change][0]
+    print('Max change year: ', maxC, end=' ')
+    print(year)
+    print(min(list_change[1:]))
+    print(list_change.index(min(list_change[1:])))
+    print('Min change year: ', list_[list_change.index(min(list_change[1:]))][0])
+    
+main()
 
 
 #10
 
+def main():
+    infile=open('WorldSeriesWinners.txt','r')
+    infile_content=infile.readline()
+    list_teams=[]
+    while infile_content!='':
+        list_teams.append(infile_content.split())
+        infile_content=infile.readline()
+    #print(list_teams)
+    new_list_team=[]
+    
+    for i in list_teams:
+            print(i[-1])
+            new_list_team.append(i[-1])
+    print(new_list_team)
+    aTeam=input()
+    total=new_list_team.count(aTeam)
+    print(total)
+    count=0
+    for team in new_list_team:
+        if aTeam==team:
+            count+=1
+    print(count)   
+    
+main()
+
 #11
 
-
+def main():
+    rows=3
+    columns=3
+    values=[[0]*columns,
+            [0]*columns,
+            [0]*columns]
+    
+    
+    for i in range(rows):
+        for j in range(columns):
+            values[i][j]=int(input())
+    a, b=test_Lo_Shu(values)
+    
+    if a==b:
+        print("Magic Square")
+    else:
+        print("Try again")
+    print(values)
+def test_Lo_Shu(values)    :
+    
+    list_sum_rows=[]
+    for i in values:
+        list_sum_rows.append(sum(i))
+        
+    print(list_sum_rows)
+    list_=[]
+    total_1=0
+    total_2=0
+    total_3=0
+    for i in range(len(values)):
+       total_1+=values[i][0]
+       total_2+=values[i][1]
+       total_3+=values[i][2]
+   
+       
+    list_.insert(0,total_1)    
+    list_.insert(1,total_2)
+    list_.insert(2,total_3)   
+        
+    
+    
+    return(list_, list_sum_rows)  
+        
+        
+main()
 
