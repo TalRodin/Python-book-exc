@@ -142,9 +142,104 @@ if __name__ == '__main__':
 
 #7
 
+def main(list_):
+    
+    list_.pop()
+    new_list=[]
+    dict_={}
+    print(list_)
+    for _ in list_:
+        print(_[-1])
+        new_list.append(_[-1])
+    print(new_list)
+    for i in new_list:
+        dict_[i]=new_list.count(i)
+    print(dict_)
 
+    your_choice(dict_)
+    
+def your_choice(dict_):
+    choice=input("Please enter what team: ")
+    if choice in dict_:
+        print(dict_[choice])
+    
+if __name__ == '__main__':
+    infile=open('WorldSeriesWinners.txt', 'r',encoding="utf-8")
+    list_=[]
+    infile_content=infile.readline()
+    while infile.readline()!='':
+        list_.append(infile_content.split())
+        infile_content=infile.readline()
+    #infile_content=infile.read().split('\n')
+    main(list_)
 
 #8
+
+def main():
+
+    print("1. Look up a person's email: ")
+    print("2. Add a new name and email address: ")
+    print("3. Change an existing email address: ")
+    print("4. Delete an existing name and email address: ")
+    choice=int(input())
+    return choice
+
+
+def look_up(email_addresses):
+    name=input("Enter name: ")
+    print(email_addresses.get(name, "Not found."))
+def add(email_addresses):
+    name=input("Enter name: ")
+    e_address=input("Enter email address: ")
+    
+    if name not in email_addresses:
+        email_addresses[name]=e_address
+    else:
+        print('This name exists.')
+        
+        
+        
+def change(email_addresses):
+    name=input("Enter the name: ")
+    if name in email_addresses:
+        email=input("Enter the new email: ")
+        email_addresses[name]=email
+    
+    else:
+        print("That name is not found.")
+        
+def delete(email_addresses):
+    
+    name=input("Enter the name: ")
+    if name in email_addresses:
+        del email_addresses[name]
+    else:
+        print("That name is not found.") 
+
+if __name__=='__main__':
+    
+    LOOK_UP=1
+    ADD=2
+    CHANGE=3
+    DELETE=4
+    QUIT=5
+    
+    email_addresses={}
+    
+    choice=0
+    
+    while choice!=QUIT:
+        
+        choice=main()
+        
+        if choice==LOOK_UP:
+            look_up(email_addresses)
+        elif choice==ADD:
+            add(email_addresses)
+        elif choice==CHANGE:
+            change(email_addresses)
+        elif choice==DELETE:
+            delete(email_addresses)
 
 #9
 
