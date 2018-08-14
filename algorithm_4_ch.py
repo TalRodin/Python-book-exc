@@ -12,7 +12,7 @@ main()
 
 #2
 
-print('------')
+
 def main():
     keep_going='y'
     while keep_going=='y':
@@ -25,7 +25,7 @@ main()
 
 #3
 
-print('------')
+
 def main():
     for i in range(1000+1):
         print(i)
@@ -33,7 +33,7 @@ main()
 
 #4
 
-print('------')
+
 def main():   
     total=0
     i=0
@@ -46,7 +46,7 @@ main()
 
 #5
 
-print('------')
+
 def main():   
    total=0
    for numerator in range(1,30,1):
@@ -57,7 +57,6 @@ main()
 
 #6
 
-print('------')
 x+=1
 x*=2
 x/=10
@@ -65,7 +64,6 @@ x-=100
 
 #7
 
-print('------')
 def main():
    row=10
    col=15
@@ -74,9 +72,10 @@ def main():
            print('#', end='')
        print()
 main()
+
 #8
 
-print('------')
+
 def main():
        keep_going='y'
        while (keep_going=='y'):
@@ -90,7 +89,7 @@ main()
 
 #9
 
-print('------')
+
 def main():
        keep_going='y'
        while (keep_going=='y'):

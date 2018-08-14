@@ -212,7 +212,7 @@ main()
        
 #11
 
-print('--'*10)
+
 def main():
     number_books=int(input("Please enter the number of books: "))
     if number_books==0:
@@ -283,7 +283,7 @@ main()
 
 #15
 
-print('--'*10)
+
 def main():
    number_seconds=int(input("Please enter the number of the seconds: "))
    if number_seconds>=60:

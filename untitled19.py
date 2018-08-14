@@ -53,6 +53,8 @@ if __name__=='__main__':
     
     while choice!=QUIT:
         
+        choice=main()
+        
         if choice==LOOK_UP:
             look_up(email_addresses)
         elif choice==ADD:

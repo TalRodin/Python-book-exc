@@ -10,28 +10,28 @@ main()
 
 def main():
     total_sales= input("Please, enter the total sales: ")
-    annual_profit=0.23*int(total_sales)
-    print('Annual profit: $', annual_profit)
+    print('Annual profit: $', 0.23*int(total_sales))
 main()
 
 #3
 
 def main():
-    one_acre_land=43560
     square_feet=input("Enter the total square feet in a tract of land: ")
-    print("The number of acres in the tract: ", format(int(square_feet)/one_acre_land, '.2f'))
+    print("The number of acres in the tract: ", format(int(square_feet)/43560, '.2f'))
 main()
 
 #4
 
 def main():
-    #items=5
-    price_1=int(input("Price 1st item: "))
-    price_2=int(input("Price 2nd item: "))
-    price_3=int(input("Price 3rd item: "))
-    price_4=int(input("Price 4th item: "))
-    price_5=int(input("Price 5th item: "))
-    subtotal_cost=price_1+price_2+price_3+price_4+price_5
+    #items=5    
+    #price_1=int(input("Price 1st item: "))
+    #price_2=int(input("Price 2nd item: "))
+    #price_3=int(input("Price 3rd item: "))
+    #price_4=int(input("Price 4th item: "))
+    #price_5=int(input("Price 5th item: "))
+    #subtotal_cost=price_1+price_2+price_3+price_4+price_5
+    price=list(map(int, input().split()))
+    subtotal_cost=sum(price)    
     tax=0.07*subtotal_cost
     total=subtotal_cost+tax
     print("\nSubtotal cost: ", subtotal_cost )
@@ -41,7 +41,7 @@ main()
 
 #5
 
-print('--'*10)
+
 def main():
     speed=70
     #distance=speed*time
@@ -74,7 +74,6 @@ main()
 
 #8
 
-print('--'*10)
 def main():
    tax=0.07
    tip=0.18
@@ -92,8 +91,7 @@ main()
 
 def main():
    C=int(input('Please enter the temperature in C: ')) 
-   F=9/5*C+32
-   print("The temperature in F: ", F)
+   print("The temperature in F: ", 9/5*C+32)
 main()
 
 #10
