@@ -33,7 +33,7 @@ print(random.randint(1,100))
 #7
 def half(number):
     return(number/2)
-
+ 
 if __name__=='__main__':
     n=float(input())
     print(half(n))
