@@ -39,11 +39,4 @@ outfile.write('Elli')
 outfile.close()
 print(outfile)
 
-#7
-
-
-
-    
-
-#8
 
