@@ -23,4 +23,10 @@ class Employee:
     def get_job_title(self):
         return self.__job_title
         
-    
+    def  __str__(self):
+        return "Name: "+self.__name+\
+               "\nID number: "+ self.__ID_number+\
+               "\nDepartment: "+ self.__department+\
+               "\nJob title: "+self.__job_title
+               
+               
