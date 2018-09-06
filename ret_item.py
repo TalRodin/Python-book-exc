@@ -16,6 +16,6 @@ class RetailItem:
     def get_units_inventory(self):
         return self.__units_inventory
     def get_price(self):
-        return self.__price
+        return float(self.__price)
     
     
