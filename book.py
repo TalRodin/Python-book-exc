@@ -19,5 +19,5 @@ class Book:
         return self.__publisher
 
     def __str__(self):
-        return self.__title, self.__author, self.__publisher
+        return self.__title
 
