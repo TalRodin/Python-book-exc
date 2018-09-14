@@ -13,6 +13,7 @@ class Employee:
         return self.employee_name
     def get_employee_number(self):
         return self.employee_number
+    
 class ProductionWorker(Employee):
     def __init__(self, employee_name, employee_number, shift_number, hourly_pay_rate):
         Employee.__init__(self,employee_name, employee_number)
@@ -30,6 +31,7 @@ class ProductionWorker(Employee):
         return self.hourly_pay_rate
 
 #2    
+#2    
 class ShiftSupervisor(Employee):
     def __init__(self, employee_name, employee_number, annual_salary, bonus):
         Employee.__init__(self, employee_name, employee_number)
@@ -42,18 +44,35 @@ class ShiftSupervisor(Employee):
         self.bonus=bonus
         
     def get_annual_salary(self):
-        return self.shift_number
+        return self.annual_salary
     def get_bonus(self):
         return self.bonus
     
 def main():
     name=input("Enter the name: ")
     number=int(input("Enter the number: "))
-    shift_number=int(input("Enter the shift number: "))
-    rate=int(input("Enter the hourly rate: "))
+    shift_number=int(input("Enter the shift number (1,2,3): "))
+    rate=float(input("Enter the hourly rate: "))
     e=ProductionWorker(name,number,shift_number,rate)
-    
-main()    
+    print(e.get_employee_name())
+    print(e.get_employee_number())
+    print(e.get_shift_number())
+    print(e.get_hourly_pay_rate())
+main() 
+
+#for problem #2
+#def main():
+#    name=input("Enter the name: ")
+#    number=int(input("Enter the number: "))
+#    super_salary=float(input("Enter super salary: "))
+#    bonus=float(input("Enter the bonus: "))
+#    e=ShiftSupervisor(name,number,super_salary,bonus)
+#    print(e.get_employee_name())
+#    print(e.get_employee_number())    
+#    print(e.get_annual_salary())
+#    print(e.get_bonus())
+#main() 
+
 
 #3
 
